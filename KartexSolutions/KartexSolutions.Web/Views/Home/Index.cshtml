@@ -1,25 +1,308 @@
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-@{Layout="~/Views/Shared/_Layout.cshtml";}
-
-<section class="hero">
-<h1>Enterprise Software & AI Solutions</h1>
-<p>Transform your business with next-generation technology</p>
-<a href="/Home/Services" class="btn-glow">Explore Services</a>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Enterprise Software & AI Solutions</h1>
+        <p>Transform your business with next-generation technology</p>
+        <a href="/Home/Services" class="btn-primary">Explore Services</a>
+    </div>
 </section>
 
-<section class="cards">
-<div class="card">
-<h3>Cloud Solutions</h3>
-<p>Azure, AWS enterprise deployments</p>
-</div>
-
-<div class="card">
-<h3>AI Development</h3>
-<p>GenAI, Automation, Intelligent systems</p>
-</div>
-
-<div class="card">
-<h3>Enterprise Apps</h3>
-<p>.NET enterprise scalable systems</p>
-</div>
+<!-- Features Section -->
+<section class="features-section">
+    <h2>Why Choose Kartex?</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="icon">⚡</i>
+            <h3>Lightning Fast</h3>
+            <p>Optimized performance and scalability for your business</p>
+        </div>
+        <div class="feature-card">
+            <i class="icon">🔒</i>
+            <h3>Secure & Reliable</h3>
+            <p>Enterprise-grade security with 99.9% uptime</p>
+        </div>
+        <div class="feature-card">
+            <i class="icon">🛠️</i>
+            <h3>Easy Integration</h3>
+            <p>Seamless integration with your existing systems</p>
+        </div>
+    </div>
 </section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Cloud Solutions</h3>
+            <p>Azure, AWS enterprise deployments with full support</p>
+            <a href="#" class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+            <h3>AI Development</h3>
+            <p>GenAI, Automation, Intelligent systems powered by latest tech</p>
+            <a href="#" class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+            <h3>Enterprise Apps</h3>
+            <p>.NET enterprise scalable systems built for growth</p>
+            <a href="#" class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+            <h3>Consulting</h3>
+            <p>Strategic technology consulting for digital transformation</p>
+            <a href="#" class="card-link">Learn More →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="stats-section">
+    <div class="stat-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+        <h3>100+</h3>
+        <p>Team Members</p>
+    </div>
+    <div class="stat-item">
+        <h3>50+</h3>
+        <p>Enterprise Clients</p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Get in touch with our experts today</p>
+    <a href="/Home/Contact" class="btn-primary">Contact Us</a>
+</section>
+
+<style>
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: slideDown 0.8s ease-out;
+    }
+
+    .hero-content p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        animation: slideUp 0.8s ease-out;
+    }
+
+    /* Features Section */
+    .features-section {
+        padding: 60px 20px;
+        background: #f8f9fa;
+    }
+
+    .features-section h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        color: #333;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-card .icon {
+        font-size: 2.5em;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+        color: #667eea;
+        margin-bottom: 15px;
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 60px 20px;
+    }
+
+    .services-section h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        color: #333;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+    }
+
+    .service-card h3 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .card-link {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .card-link:hover {
+        color: #764ba2;
+    }
+
+    /* Statistics Section */
+    .stats-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .stat-item h3 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        background: #f8f9fa;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .cta-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .cta-section p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        color: #666;
+    }
+
+    /* Button Styles */
+    .btn-primary {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 12px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2em;
+        }
+
+        .features-section h2,
+        .services-section h2,
+        .cta-section h2 {
+            font-size: 1.8em;
+        }
+
+        .features-grid,
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .stats-section {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+</style>
