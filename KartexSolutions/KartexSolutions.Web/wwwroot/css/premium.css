@@ -1,0 +1,67 @@
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:#0B1220;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+}
+
+.nav-links a{
+margin-left:20px;
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#6366F1,#06B6D4);
+border-radius:20px;
+margin:40px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+padding:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(99,102,241,0.3);
+flex:1;
+min-width:250px;
+}
+
+.btn-glow{
+background:#6366F1;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+color:white;
+text-decoration:none;
+box-shadow:0 0 15px #6366F1;
+}
+
+.page-title{
+padding:40px;
+font-size:32px;
+}
+
+.footer{
+padding:20px;
+text-align:center;
+background:#111;
+margin-top:50px;
+}

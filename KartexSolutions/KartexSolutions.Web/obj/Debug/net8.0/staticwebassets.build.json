@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "PBrkSauow6jdiLfVqunYENbJiVPOWVYPVZ/FkVcmCIw=",
+  "Source": "KartexSolutions.Web",
+  "BasePath": "_content/KartexSolutions.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "KartexSolutions.Web\\wwwroot",
+      "Source": "KartexSolutions.Web",
+      "ContentRoot": "C:\\Users\\Devka\\source\\repos\\kartex\\KartexSolutions\\KartexSolutions.Web\\wwwroot\\",
+      "BasePath": "_content/KartexSolutions.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Devka\\source\\repos\\kartex\\KartexSolutions\\KartexSolutions.Web\\wwwroot\\css\\premium.css",
+      "SourceId": "KartexSolutions.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Devka\\source\\repos\\kartex\\KartexSolutions\\KartexSolutions.Web\\wwwroot\\",
+      "BasePath": "_content/KartexSolutions.Web",
+      "RelativePath": "css/premium.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\premium.css"
+    }
+  ]
+}
